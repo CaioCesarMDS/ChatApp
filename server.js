@@ -14,6 +14,6 @@ io.on("connection", (socket) => {
 
 app.use(express.static("public"));
 
-serverHttp.listen(3000, "192.168.1.65", () => {
-    console.log("Server is running on http://192.168.1.65:3000")
+serverHttp.listen(process.env.PORT || 3000, () => {
+    console.log("Server is running");
 });

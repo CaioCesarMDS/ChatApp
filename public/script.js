@@ -15,5 +15,5 @@ sendButton.addEventListener("click", () => {
 });
 
 socket.on("new message", (message) => {
-    chat.innerHTML += `<li>${message}</li>`
+    chat.innerHTML += `<li>${message}</li>`;
 });
