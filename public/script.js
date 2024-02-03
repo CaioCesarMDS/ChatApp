@@ -2,7 +2,7 @@ const messageInput = document.querySelector("#message");
 const sendButton = document.querySelector("button");
 const chat = document.getElementById("messages");
 
-const socket = io();
+const socket = io("https://chat-app-mds.vercel.app");
 
 sendButton.addEventListener("click", () => {
     console.log(messageInput.value);

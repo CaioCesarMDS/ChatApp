@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 const serverHttp = http.createServer(app);
-const io = require("socket.io")(serverHttp);
+const io = require("socket.io")(serverHttp, {path: "/socket.io"});
 
 io.on("connection", (socket) => {
     console.log("User connected");
